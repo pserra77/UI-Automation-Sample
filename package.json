@@ -4,13 +4,12 @@
   "author": "Sumit",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -c ./Nightwatch.js --env chrome"
+    "test": "./node_modules/.bin/nightwatch --env chrome"
   },
   "dependencies": {
     "chromedriver": "^2.27.3",
     "dalek-browser-ie": "0.0.5",
     "nightwatch": "^0.9.12",
-    "nightwatch-pages": "0.0.1",
     "phantomjs": "^2.1.7",
     "selenium-server": "^3.1.0",
     "xlsx": "^0.8.7"
