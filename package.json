@@ -4,7 +4,7 @@
   "author": "Sumit",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch --env chrome"
+    "test": "./node_modules/.bin/nightwatch.cmd -c Nightwatch.js --env chrome"
   },
   "dependencies": {
     "chromedriver": "^2.27.3",

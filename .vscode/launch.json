@@ -7,29 +7,17 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch via NPM",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "debug"
-            ],
-            "port": 5858
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/node_modules/.bin/nightwatch.cmd",
+            "cwd": "${workspaceRoot}",
+            "args": [ "${--env:chrome}", "${-c:Nightwatch.js}" ]
         },
         {
             "type": "node",
             "request": "attach",
             "name": "Attach to Process",
-            "processId": "${command:PickProcess}",
+            "address": "localhost",
             "port": 5858
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${file}"
         }
     ]
 }
